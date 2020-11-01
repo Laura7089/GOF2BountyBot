@@ -17,7 +17,7 @@ import operator
 # used for spawning items from dict in dev_cmd_give
 import json
 import traceback
-from os import path
+from os import path, environ
 from aiohttp import client_exceptions
 
 # BountyBot Imports
@@ -5332,4 +5332,4 @@ async def on_raw_bulk_message_delete(payload : discord.RawBulkMessageDeleteEvent
 
 
 # Launch the bot!! 🤘🚀
-bbGlobals.client.run(bbPRIVATE.botToken)
+bbGlobals.client.run(environ["GOF2_BOT_TOKEN"])
