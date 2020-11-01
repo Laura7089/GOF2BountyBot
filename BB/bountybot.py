@@ -23,7 +23,7 @@ from aiohttp import client_exceptions
 # BountyBot Imports
 
 # may replace these imports with a from . import * at some point
-from .bbConfig import bbConfig, bbData, bbPRIVATE
+from .bbConfig import bbConfig, bbData
 from .bbObjects import bbUser, bbInventory
 from .bbObjects.bounties import bbBounty, bbBountyConfig, bbCriminal, bbSystem
 from .bbObjects.items import bbShip, bbModuleFactory, bbShipUpgrade, bbTurret, bbWeapon
