@@ -12,6 +12,7 @@ COPY --chown=bountybot . $APP_LOC
 
 # Prep system with dependencies
 RUN pip install --requirement $APP_LOC/requirements.txt
+RUN apt-get update
 RUN apt-get install --no-install-recommends -y blender
 
 # Create directory structure and links

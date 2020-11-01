@@ -1,2 +1,4 @@
 saveData
 __pycache__
+.dockerignore
+Dockerfile
